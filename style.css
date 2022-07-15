@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.nft-container{
+    padding-top: 50px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.nft-wrapper{
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+.nft-img{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.nft-img img{
+    width: 100%;
+    display: block;
+}
+.img-overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.4);
+    display: none;
+}
+.nft-img:hover .img-overlay{
+    display: block;
+    cursor: pointer;;
+}
+
+.nft-link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.nft-link:hover{
+    color: hsl(178, 100%, 50%);
+}
+p{
+    color: hsl(215, 51%, 70%);
+}
+
+.price-days{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.price, .days{
+    display: flex;
+    align-items: center;
+}
+.price p{
+    padding-left: 7px;
+    color: hsl(178, 100%, 50%);
+}
+.days p{
+    padding-left: 7px;
+    color: hsl(215, 51%, 70%);
+}
+
+.author{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.author img{
+    height: 30px;
+    width: 30px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+}
+.author p{
+    padding-left: 15px;
+    font-size: 15px;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+.link:hover{
+    color: hsl(178, 100%, 50%);
+}
+hr{
+    border: none;
+    border-top: 1px solid #fff;
+}
+
+@media screen and (max-width: 600px){
+    .nft-container{
+        max-width: 300px;
+        margin: 0 auto;
+
+    }
+}
